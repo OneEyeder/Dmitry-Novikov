@@ -17,7 +17,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     function redirectIfMobile() {
         const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-        const screenIsSmall = window.innerWidth <= 768;
+        const screenIsSmall = window.innerWidth <= 500;
 
         if (isMobile || screenIsSmall) {
             window.location.href = './glavnaya--phone.html';
